@@ -1,0 +1,101 @@
+/* styles.css */
+
+/* Body */
+
+body {
+    padding-top: 5em;
+    padding-bottom: 2em;
+    width: auto;
+    scrollbar-width: 0px; /* Remove scrollbar */
+    overflow-y: scroll; /* Add scrollbar on the html element */
+    background-color: #fffcf6 ; /* Replace #f0f0f0 with your desired background color */
+    overflow-x: hidden;
+
+
+}
+
+/* Fonts */
+body {
+    font-family: 'Crimson Text';
+    letter-spacing: 1px;
+}
+
+/* About section */
+#about {
+    text-align: center;
+}
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('path/to/crimsontext.woff2') format('woff2'),
+         url('path/to/crimsontext.woff') format('woff');
+    /* Add more font formats if necessary */
+    font-weight: normal;
+    font-style: normal;
+}
+/* Profile Picture */
+.rounded-circle {
+    border-radius: 50%;
+}
+
+/* About content */
+.about-content {
+    justify-content: center;
+}
+
+/* Info list */
+.info-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.info-list li {
+    margin-bottom: 10px;
+}
+
+.info-list li strong {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Skill bars */
+.skill-bars {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skill-bars li {
+    margin-bottom: 10px;
+}
+
+/* Progress bars */
+.progress {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    color: #942222;
+    text-align: center;
+}
+
+/* Buttons */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Adjust height as needed */
+    border-width: auto;
+    background-color: rgb(73, 150, 161); /* Navbar background color */
+    box-shadow: 0 2px 4px rgba(154, 164, 255, 0.947); /* Optional: Add shadow for a raised effect */
+}
+
+.navbar .btn {
+    margin: 0 5px; /* Adjust button spacing as needed */
+}
