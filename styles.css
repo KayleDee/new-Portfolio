@@ -3,12 +3,20 @@
 /* Body */
 
 body {
+    background-image: url('images/aboutmeimage.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    font-family: 'Crimson Text', serif; 
+    /* ^ backround image ^ */
+
+    color: #333; /* Default font color */
     padding-top: 5em;
     padding-bottom: 2em;
     width: auto;
-    scrollbar-width: 0px; /* Remove scrollbar */
-    overflow-y: scroll; /* Add scrollbar on the html element */
-    background-color: #fffcf6 ; /* Replace #f0f0f0 with your desired background color */
+    scrollbar-width: 0px; 
+    overflow-y: scroll; 
+    background-color: #fffcf6 ; 
     overflow-x: hidden;
 
 
@@ -22,19 +30,19 @@ body {
 
 /* About section */
 #about {
+
     text-align: center;
 }
 @font-face {
     font-family: 'Crimson Text';
     src: url('path/to/crimsontext.woff2') format('woff2'),
          url('path/to/crimsontext.woff') format('woff');
-    /* Add more font formats if necessary */
     font-weight: normal;
     font-style: normal;
 }
 /* Profile Picture */
 .rounded-circle {
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 /* About content */
@@ -44,8 +52,9 @@ body {
 
 /* Info list */
 .info-list {
-    list-style-type: none;
-    padding-left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .info-list li {
@@ -54,8 +63,21 @@ body {
 
 .info-list li strong {
     display: inline-block;
-    width: 100px;
+    width: 80px; 
 }
+
+.info-list li a {
+    text-decoration: none;
+}
+
+
+.info-list li a img {
+    width: 30px; 
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px; 
+}
+
 
 /* Skill bars */
 .skill-bars {
@@ -83,19 +105,19 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* Ensure the navbar is above other content */
+    z-index: 1000; 
 }
 
 .navbar .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px; /* Adjust height as needed */
+    height: 60px; 
     border-width: auto;
-    background-color: rgb(73, 150, 161); /* Navbar background color */
-    box-shadow: 0 2px 4px rgba(154, 164, 255, 0.947); /* Optional: Add shadow for a raised effect */
+    background-color: rgb(255, 245, 136); 
+    box-shadow: 0 2px 4px rgba(255, 222, 37, 0.947); 
 }
 
 .navbar .btn {
-    margin: 0 5px; /* Adjust button spacing as needed */
+    margin: 0 5px; 
 }
